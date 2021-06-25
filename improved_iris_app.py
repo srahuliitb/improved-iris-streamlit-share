@@ -53,10 +53,10 @@ def prediction(model, sepal_length, sepal_width, petal_length, petal_width):
 st.sidebar.title("Iris Flower Species Prediction App")      
 
 # Add 4 sliders and store the value returned by them in 4 separate variables. 
-s_len = st.sidebar.slider("Sepal Length", iris_df["SepalLengthCm"].min(), iris_df["SepalLengthCm"].max())
-s_wid = st.sidebar.slider("Sepal Width", iris_df["SepalWidthCm"].min(), iris_df["SepalWidthCm"].max())
-p_len = st.sidebar.slider("Petal Length", iris_df["PetalLengthCm"].min(), iris_df["PetalLengthCm"].max())
-p_wid = st.sidebar.slider("Petal Width", iris_df["PetalWidthCm"].min(), iris_df["PetalWidthCm"].max())
+s_len = st.sidebar.slider("Sepal Length", float(iris_df["SepalLengthCm"].min()), float(iris_df["SepalLengthCm"].max()))
+s_wid = st.sidebar.slider("Sepal Width", float(iris_df["SepalWidthCm"].min()), float(iris_df["SepalWidthCm"].max()))
+p_len = st.sidebar.slider("Petal Length", float(iris_df["PetalLengthCm"].min()), float(iris_df["PetalLengthCm"].max()))
+p_wid = st.sidebar.slider("Petal Width", float(iris_df["PetalWidthCm"].min()), float(iris_df["PetalWidthCm"].max()))
 
 # Add a select box in the sidebar with label 'Classifier' 
 # and with 3 options passed as a tuple ('Support Vector Machine', 'Logistic Regression', 'Random Forest Classifier').
