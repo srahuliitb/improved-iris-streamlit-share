@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 # Loading the dataset.
-iris_df = pd.read_csv("https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/iris-species.csv")
+iris_df = pd.read_csv("iris-species.csv")
 
 # Adding a column in the Iris DataFrame to resemble the non-numeric 'Species' column as numeric using 'map()' function.
 # Creating the numeric target column 'Label' to 'iris_df' using 'map()'.
